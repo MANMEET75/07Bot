@@ -9,7 +9,12 @@ from langchain.embeddings import GooglePalmEmbeddings
 from langchain.llms import GooglePalm
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from langchain_nomic.embeddings import NomicEmbeddings
+# from langchain_nomic.embeddings import NomicEmbeddings
+
+import google.generativeai as palm
+from langchain.embeddings import GooglePalmEmbeddings
+from langchain.llms import GooglePalm
+from langchain_google_genai import GoogleGenerativeAI
 
 os.environ['GOOGLE_API_KEY'] =  'AIzaSyCY-PL2d9WL8qTsNY6jLFT_8EBfl2ezXk4'
 

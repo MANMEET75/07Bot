@@ -1,4 +1,3 @@
-
 from langchain.memory import ConversationBufferMemory,ConversationBufferWindowMemory
 from langchain import PromptTemplate
 from langchain.llms import CTransformers
@@ -24,22 +23,19 @@ import datetime
 import pytz
 from langchain_community.llms import Ollama
 import os
-from pymongo import MongoClient
-from bson.objectid import ObjectId
-#from datetime import datetime
+# from pymongo import MongoClient
+# from bson.objectid import ObjectId
 import json
-import mysql.connector
+# import mysql.connector
 import re
 import warnings
 from typing import List
-import torch
+# import torch
 from langchain import PromptTemplate
 from langchain.chains import ConversationChain
 from langchain.llms import HuggingFacePipeline
 from langchain.schema import BaseOutputParser
 from transformers import (AutoModelForCausalLM,AutoTokenizer,StoppingCriteria,StoppingCriteriaList,pipeline,AutoModelForSeq2SeqLM, BitsAndBytesConfig,)
-# from peft import PeftConfig
-# from peft import PeftModel
 from huggingface_hub import login
 warnings.filterwarnings("ignore", category=UserWarning)
 from langchain.agents import AgentType, initialize_agent
@@ -52,17 +48,13 @@ from transformers import pipeline
 from transformers import BitsAndBytesConfig
 from transformers import AutoModelForCausalLM
 from transformers import AutoTokenizer
-from semantic_router import Route
-from semantic_router import RouteLayer
-#from semantic_router.encoders import OpenAIEncoder
-from semantic_router.encoders import HuggingFaceEncoder
+
 from datetime import datetime
 from langchain import PromptTemplate, LLMChain
 from langchain.agents import Tool
 from langchain.chains import LLMMathChain
-from langchain_nomic.embeddings import NomicEmbeddings
+# from langchain_nomic.embeddings import NomicEmbeddings
 from deep_translator import GoogleTranslator,single_detection
-
 import google.generativeai as palm
 from langchain.embeddings import GooglePalmEmbeddings
 from langchain.llms import GooglePalm
